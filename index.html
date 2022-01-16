@@ -19,20 +19,46 @@
             <div class="col-sm-12">
                 <div class="row">
                     <div class="video-container col-sm-6">
-                        <video id="video" class="video" height="480" width="640" autoplay></video>
+                        <video id="video" class="video" height="480" width="640" autoplay>WebCam Display</video>
                         <p><span id="seconds">00</span>:<span id="tens">00</span></p>
                     </div>
                     <div class="photo-container col-sm-6">
-                        <canvas id="cameraPhoto" height="480" width="640"></canvas>
+                        <canvas id="cameraPhoto" height="480" width="640">Photo captured</canvas>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center col-sm-12">
                         <button id="startcamera" class="btn btn-primary">Start camera</button>
                         <button id="stopcamera" class="btn btn-danger">Stop Camera</button>
                         <button id="startrecord" class="btn btn-success">Start Recording</button>
                         <button id="stoprecord" class="btn btn-danger">Stop Recording</button>
+                        <a id="downloadvideo" class="btn btn-info" download="test.webm">Download Video</a>
                     </div>
-                    <div class="downloads">
-                        <a id="downloadvideo" download="test.webm">Download Video</a>
+                    <div class="downloads col-sm-10" style="text-align: center;align-items: center;">
+                        <h3>User Manual</h3>
+                        <ul>
+                            <li>
+                                Click on start button start the webcam recording.
+                            </li>
+                            <li>
+                                Click allow to give permisson to access webbam.
+                            </li>
+                            <li>
+                                click on video to capture a photo.
+                            </li>
+                            <li>
+                                click on captured photo to Download it.
+                            </li>
+                            <li>
+                                Click on start recording to start video recording.
+                            </li>
+                            <li>
+                                click on stop recording to stop video recording.
+                            </li>
+                            <li>
+                                Click download button to download the recorded video.
+                            </li>
+                        </ul>
+
+                        
                     </div>
                     
                 </div>

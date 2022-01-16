@@ -27,6 +27,7 @@ $(function () {
 
     stopCamera.addEventListener('click', async function () {
         cameraStream = null;
+        mediaRecorder = null;
         video.srcObject = null;
     });
 
