@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam demo</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel = "stylesheet" href="index.css" /> 
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="index2.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="video-container col-sm-6">
+                        <video id="video" class="video" height="480" width="640" autoplay></video>
+                        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+                    </div>
+                    <div class="photo-container col-sm-6">
+                        <canvas id="cameraPhoto" height="480" width="640"></canvas>
+                    </div>
+                    <div class="text-center">
+                        <button id="startcamera" class="btn btn-primary">Start camera</button>
+                        <button id="stopcamera" class="btn btn-danger">Stop Camera</button>
+                        <button id="startrecord" class="btn btn-success">Start Recording</button>
+                        <button id="stoprecord" class="btn btn-danger">Stop Recording</button>
+                    </div>
+                    <div class="downloads">
+                        <a id="downloadvideo" download="test.webm">Download Video</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
